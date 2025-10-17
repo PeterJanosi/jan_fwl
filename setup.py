@@ -13,7 +13,8 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', ['launch/temp_monitor_launch.py']),
-        (os.path.join('share', package_name), glob('launch/*launch.[pxy][yma]*')), 
+        (os.path.join('share', 'package_name', 'launch'), glob('launch/*.py')),
+
     ],
     install_requires=['setuptools'],
     zip_safe=True,
