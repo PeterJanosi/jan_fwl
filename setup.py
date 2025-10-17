@@ -23,7 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            # 'control_vehicle = jan_fwl.control_vehicle:main',
+             'temp_sensor_node = jan_fwl.temp_sensor_node:main',
+              'alert_node = jan_fwl.alert_node:main',
         ],
     },
 )
